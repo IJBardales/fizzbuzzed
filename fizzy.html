@@ -1,0 +1,69 @@
+<!Doctype html>
+<html lang="engl-US">
+<head>
+	<title>Drills</title>
+	<meta charset="UTF-8">
+	<style>
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  min-width: 250px;
+  padding: 30px;
+}
+
+p {
+  max-width: 500px;
+}
+
+.fizz-buzz-item {
+  display: block;
+  float: left;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  border: 1px solid grey;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.fizz-buzz-item span {
+  vertical-align: middle;
+  line-height: 80px;
+}
+
+.fizz, .fizzbuzz {
+  border: 4px solid green;
+}
+
+.buzz, .fizzbuzz {
+  background-color: #D5F5E3;
+}
+	</style>
+</head>
+<body>
+<main>
+  <h1>Fizz Buzz</h1>
+  <section>
+    <p>In this game, you enter a positive number, and I count from 0 to that number, subbing in "fizz" if it's divisible by 3, "buzz" if it's divisible by 5, and "fizzbuzz" if it's divisible by both</p>
+    <form id="number-chooser" action="www.somewhere.com">
+      <label for="number-choice">Choose a positive number</label>
+      <input id="number-choice" name="number-choice" type="number" required />
+      <input class="sub" type="submit" />
+    </form>
+  </section>
+  <section>
+    <h2>Results</h2>
+    <div class="js-results"></div>
+  </section>
+</main>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script type="text/javascript" src="fizbuz.js"></script>  
+
+</body>
+</html>
